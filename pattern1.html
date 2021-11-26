@@ -1,0 +1,75 @@
+<!-- Pattern  -->
+
+<!-- Generate a pattern similar to the following (Take n as input from user):   n=5 and  n=8  
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var n=prompt("Enter n please for drawing pattern.");
+
+        function draw_pattern(n){
+
+            console.log("The pattern for n=",n);
+            console.log("\n")
+            var string="";
+
+            //    for the upper triangle
+
+            for(var i=0;i<n;i++){
+                for(var j=0;j<i;j++){
+                string+="*";
+
+                }
+                string+="\n";
+                
+            }
+
+            // For the lower triangle
+
+            for(var i=n;i>0;i--){
+                for(var j=i;j>0;j--){
+                string+="*";
+
+                }
+                string+="\n";
+                
+            }
+
+            console.log(string);
+
+        }
+
+        draw_pattern(n);
+
+       
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
